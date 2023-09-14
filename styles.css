@@ -1,0 +1,81 @@
+body {
+    font-family: Arial, sans-serif;
+    transition: background-color 0.3s, color 0.3s;
+    text-align: center;
+}
+
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+button {
+    padding: 10px 20px;
+    background-color: #007BFF;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.dark-mode {
+    background-color: #333;
+    color: #fff;
+}
+
+.dark-mode button {
+    background-color: #ddd;
+    color: #333;
+}
+
+input[type="radio"]:checked + label::before {
+    background-color: #007BFF;
+}
+
+input[type="submit"] {
+    background-color: #007BFF;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    margin-top: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+input[type="submit"]:hover {
+    background-color: #0056b3;
+}
+
+
+input[type="radio"] + label::before {
+    content: "\00a0";
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    border: 2px solid #007BFF;
+    border-radius: 50%;
+    vertical-align: middle;
+    cursor: pointer;
+}
+
+form {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+    display: inline-block;
+    text-align: center;
+}
+
+label {
+    display: inline-block;
+    margin: 5px;
+    font-weight: bold;
+}
+
+input[type="radio"] {
+    display: none;
+}
+
